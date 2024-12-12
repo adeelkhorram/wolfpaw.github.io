@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf-Paw</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#273d50, #084b85, #e6F6F6); /* Half white gradient */
+            color: white;
+        }
+        nav {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            display: flex;
+            background-repeat: no-repeat;
+            justify-content: center;
+            align-items: center;
+            position: top;
+            top:0px;
+            z-index: 1000;
+        }
+        nav img {
+            height: 40px;
+            margin: 0 10px;
+        }
+        nav h1 {
+            font-family: Impact, Charcoal, sans-serif;
+            margin: 0;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 200vh;
+           top: 0px; /* Adjust the value to match your navbar height */
+            position: relative;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 0px;
+            padding: 0px;
+        }
+        .button-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 150px;
+        }
+        .button-box p {
+            font-family: 'Jameel Noori Nastaleeq', serif;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        p {
+            font-family: 'Jameel Noori Nastaleeq', serif;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+             font-family: 'Jameel Noori Nastaleeq', serif;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        button:focus {
+            outline: 3px solid #ffcb05;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .text-container {
+            margin-top: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .text-container p {
+            color: #000;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        i {
+            font-size: 1.2rem;
+        }
+        .footer {
+  position: no-repeat;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  color: #333;
+  text-align: center;
+  padding: 0px;
+}
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+  .contact-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-card1 {
+            background-color: #ffffff;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .contact-card h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .contact-card p {
+            color: #777;
+            font-size: 14px;
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+    </style>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+     <!--   <img src="1.png" alt="Wolf Icon Left">-->
+        <h1>Wolf-Paw</h1>
+       
+    </nav>
+    
+         
+    <div class="content">
+    <div class="button-container">
+              <p dir="rtl">    <marquee width="60%" direction="left" height="100px">
+نیچے دی گئی معلومات مفت ہے تاہم PAID سروسز کیلئے ہمارے وٹس ایپ نمبر پر رابطہ کریں!
+</marquee></p>
+           </div>
+            <div class="button-container">
+            
+            <div class="button-box">
+                                            <button onclick="window.location.href='https://minahalsimdata.com/';"><i class="fas fa-sim-card"></i> سم ڈیٹا</button>
+            </div>
+            <div class="button-box">
+                               <button onclick="window.location.href='https://htmlpreview.github.io/?https://github.com/adeelkhorram/site/blob/main/raw.html';" ><i class="fas fa-file-alt"></i> test</button>
+            </div>
+            <div class="button-box">
+                              <button onclick="window.location.href='#';" disabled><i class="fas fa-id-card"></i> شناختی کارڈ کاپی</button>
+            </div>
+            <div class="button-box">
+                             <button onclick="window.location.href='https://dlims.punjab.gov.pk/track';"><i class="fas fa-car"></i> ڈرائیونگ لائسنس</button>
+            </div>
+            <div class="button-box">
+                             <button onclick="window.location.href='https://ep.gov.pk/track.asp';"><i class="fas fa-truck"></i>  پاکستان پوسٹ</button>
+            </div>
+            <div class="button-box">
+                         <button onclick="window.location.href='#';" disabled><i class="fas fa-car-side"></i> گاڑی کی تصدیق کریں</button>
+            </div>
+            <div class="button-box">
+                              <button onclick="window.location.href='#';" disabled><i class="fas fa-money-bill-wave"></i>بجلی کے بل </button>
+            </div>
+            <div class="button-box">
+                             <button onclick="window.location.href='#';" disabled><i class="fas fa-file-invoice"></i> دیگر بل</button>
+            </div>
+            <div class="button-box">
+           
+                <button onclick="window.location.href='https://es.punjab-zameen.gov.pk/';"><i class="fas fa-wolf-pack-battalion"></i> جائیداد/زمین</button>
+            </div>
+<div class="button-box">
+            <p>جو معلومات اوپر نہیں انہیں حاصل کرنے کیلئے ہم سے رابطہ کریں ! شکریہ</p>
+                <button onclick="window.location.href='https://wa.me/+923413741996';"><i class="fas fa-wolf-pack-battalion"></i> جائیداد/زمین</button>
+            </div>
+        </div>
+        
+    </div>
+  <!--   <div class="contact-card">
+                <p>جو معلومات اوپر نہیں انہیں حاصل کرنے کیلئے ہم سے رابطہ کریں ! شکریہ</p>
+                <button href="https://wa.me/+923413741996" class="whatsapp-btn" target="_blank">
+            Chat on WhatsApp
+        </button>
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav h1 {
+            font-family: Impact, Charcoal, sans-serif;
+            color: white;
+            margin: 0;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .card button {
+            padding: 15px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .card button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .card button:focus {
+            outline: 3px solid #ffcb05;
+        }
+        .marquee-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .marquee-container p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+        /* Loading splash style */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+        .loading-spinner {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Wolf-Paw</h1>
+    </nav>
+    <div class="marquee-container">
+        <marquee width="60%" direction="left" height="100px">
+            نیچے دی گئی معلومات مفت ہے تاہم PAID سروسز کیلئے ہمارے وٹس ایپ نمبر پر رابطہ کریں!
+        </marquee>
+    </div>
+-->
+<footer class="footer">
+    <div class="footer-content">
+          <p dir="rtl">FRC فارم  اوریجنل شناختی کارڈ، برتھ سرٹیفکیٹ اور موجودہ لوکیشن جیسی سروسز PAID ہیں جو کہ مارکیٹ میں سب سے سستے ریٹ پر یہاں مہیا کی جاتی ہیں ہم رابطہ کریں ! شکریہ </p>
+    </div>
+  </footer>
+    <!-- Google AdSense code -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="XXXXXXXXXX"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
+</html>
+    

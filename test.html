@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf-Paw</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#273d50, #084b85, #e6F6F6);
+            color: white;
+        }
+        nav {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav h1 {
+            font-family: Impact, Charcoal, sans-serif;
+            margin: 0;
+            color: white;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            position: relative;
+        }
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            justify-content: center;
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+        .button-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            height: 100px;
+        }
+        .button-box button {
+            padding: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(90deg, #1e90ff, #007bff);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .button-box button:focus {
+            outline: 3px solid #ffcb05;
+        }
+        .button-box button:hover {
+            background: linear-gradient(90deg, #0056b3, #004080);
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+        .button-box button:disabled {
+            background: linear-gradient(90deg, #c0c0c0, #a9a9a9);
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+        .loading-spinner {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .loading-text {
+            color: white;
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const overlay = document.querySelector('.loading-overlay');
+            if (overlay) {
+                overlay.style.display = 'none';
+            }
+        });
+
+        window.addEventListener('pageshow', () => {
+            const overlay = document.querySelector('.loading-overlay');
+            if (overlay) {
+                overlay.style.display = 'none';
+            }
+        });
+
+        function showLoading() {
+            const overlay = document.querySelector('.loading-overlay');
+            if (overlay) {
+                overlay.style.display = 'flex';
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <h1>Wolf-Paw</h1>
+    </nav>
+
+    <div class="content">
+        <div class="button-container">
+            <div class="button-box">
+                <button onclick="showLoading(); window.location.href='https://minahalsimdata.com/';">
+                    <i class="fas fa-sim-card"></i> سم ڈیٹا
+                </button>
+            </div>
+            <div class="button-box">
+                <button onclick="showLoading();" disabled>
+                    <i class="fas fa-file-alt"></i> CDRs
+                </button>
+            </div>
+            <div class="button-box">
+                <button onclick="showLoading();" disabled>
+                    <i class="fas fa-id-card"></i> شناختی کارڈ کاپی
+                </button>
+            </div>
+            <div class="button-box">
+                <button onclick="showLoading(); window.location.href='https://dlims.punjab.gov.pk/track';">
+                    <i class="fas fa-car"></i> ڈرائیونگ لائسنس
+                </button>
+            </div>
+            <div class="button-box">
+                <button onclick="showLoading(); window.location.href='https://ep.gov.pk/track.asp';">
+                    <i class="fas fa-truck"></i> پاکستان پوسٹ
+                </button>
+            </div>
+            <div class="button-box">
+                <button onclick="showLoading();" disabled>
+                    <i class="fas fa-car-side"></i> گاڑی کی تصدیق کریں
+                </button>
+            </div>
+            <div class="button-box">
+                <button onclick="showLoading(); window.location.href='bills.html';" >
+                    <i class="fas fa-money-bill-wave"></i> واپڈا(الیکٹریسٹی بل)
+                </button>
+            </div>
+            <div class="button-box">
+                <button onclick="showLoading();" disabled>
+                    <i class="fas fa-file-invoice"></i> دیگر بل
+                </button>
+            </div>
+            <div class="button-box">
+                <button onclick="showLoading(); window.location.href='https://es.punjab-zameen.gov.pk/';">
+                    <i class="fas fa-wolf-pack-battalion"></i> جائیداد/زمین
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="loading-overlay">
+        <div>
+            <div class="loading-spinner"></div>
+            <p class="loading-text">انتظار کریں۔</p>
+        </div>
+    </div>
+
+    <footer>
+        <p dir="rtl">FRC فارم اوریجنل شناختی کارڈ، برتھ سرٹیفکیٹ اور موجودہ لوکیشن جیسی سروسز PAID ہیں جو کہ مارکیٹ میں سب سے سستے ریٹ پر یہاں مہیا کی جاتی ہیں ہم رابطہ کریں ! شکریہ </p>
+    </footer>
+</body>
+</html>
