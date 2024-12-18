@@ -121,6 +121,28 @@
     font-size: 24px;
   }
 </style>
+	    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const overlay = document.querySelector('.loading-overlay');
+            if (overlay) {
+                overlay.style.display = 'none';
+            }
+        });
+
+        window.addEventListener('pageshow', () => {
+            const overlay = document.querySelector('.loading-overlay');
+            if (overlay) {
+                overlay.style.display = 'none';
+            }
+        });
+
+        function showLoadingSplash() {
+            const overlay = document.querySelector('.loading-overlay');
+            if (overlay) {
+                overlay.style.display = 'flex';
+            }
+        }
+    </script>
   </head>
 <div id="loading-splash" class="loading-splash">
   Loading, please wait...
