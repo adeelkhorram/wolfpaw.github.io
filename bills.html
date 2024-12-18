@@ -94,7 +94,16 @@
 .daterangepicker select.monthselect, .daterangepicker select.yearselect{ width: auto !important}
 
 </style>
-  <script>
+
+            <style type="text/css">
+  .ulBtn li {
+    display: inline;
+    margin-right: auto;
+}
+  
+
+</style>
+	  <script>
         document.addEventListener('DOMContentLoaded', () => {
             const overlay = document.querySelector('.loading-overlay');
             if (overlay) {
@@ -116,18 +125,9 @@
             }
         }
     </script>
-
-</div>
-
     
-            <style type="text/css">
-  .ulBtn li {
-    display: inline;
-    margin-right: auto;
-}
-  
-
-</style>
+</head>
+	
 	<div id="loading-splash" class="loading-splash">
   Loading, please wait...
 </div>
