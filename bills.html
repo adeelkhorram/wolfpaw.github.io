@@ -1,149 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wolf-Paw - Button Images</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 10px;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(#273d50, #084b85, #e6F6F6);
-            color: white;
-        }
-        nav {
-            width: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 10px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav h1 {
-            font-family: Impact, Charcoal, sans-serif;
-            margin: 0;
-            color: white;
-        }
-        .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            position: relative;
-        }
-        .button-container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            width: 100%;
-            max-width: 1200px;
-        }
-        .button-box {
-            width: 100%;
-        }
-        .button {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            width: 100%;
-            padding: 10px;
-            background: linear-gradient(90deg, #1e90ff, #007bff);
-            color: white;
-            font-size: 1.2rem;
-            font-weight: bold;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background 0.3s;
-            gap: 10px;
-        }
-        .button img {
+<html lang="ur" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>WOLF PAW</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="./test_files/bootstrap.min.css" rel="stylesheet">
+
+<link href="./test_files/font-awesome.css" rel="stylesheet">
+
+<link href="./test_files/style.css" rel="stylesheet">
+
+
+<style>
+ @page { size: auto;  margin: 5mm; }
+    @media print { 
+      a[href]:after {
+         display: none; 
+      }
+			#big_table_length{display:none}
+			#big_table_info{display:none}
+	  .noprint{ display:none;}
+	  .site_main_title{ font-size:50px !important}
+	   .ibox-content{ display:inline}
+      .dataTables_filter{ display: none;} 
+      .bnt-blck{display: none;}
+      .btn_view_site{display: none;}
+      div#advanceSearch{display: none;}
+      .advanceSearchBtn{display: none;}
+      table#searchForm{display: none;}
+      .ibox-title{ display: none;} 
+      .navbar-static-side{display: none;}
+	  
+	  .row .border-bottom{ display:none}
+	  .page-heading{ display:none;}
+	  #DataTables_Table_0_wrapper .row{ display:none;}
+	  .navbar-default .navbar-static-side{ }
+	  #page-wrapper{ margin-left:0px !important;}
+	  /*.table-striped th:last-child, .table-striped td:last-child {display:none;}*/
+	  table.dataTable thead .sorting:after{ content:no-close-quote}
+	  .dropdown .profile-element{display:none}
+	  .ibox-content{display:inherit !important;}
+      .page-wrapper {
+		width: 960px !important;
+		margin: 0 auto !important; 
+	}
+	#exampl_wrapper td:first-child{
+		display:none;
+	}
+	.printlast{
+		display:block !important;
+	}
+  
+	.left100{ border:none;}
+	.photos{float:right; width:150px}
+	#appointmentDiv{ display:block !important;}
+	.showlast td:last-child{ display:block !important;}
+	.showlast th:last-child{ display:block !important;}
+	 a:link:after, a:visited:after {  
+      display: none;
+      content: "";    
+    }
+    body a:link:after, body a:visited:after {    
+  content: "";
+}
+}
+.multiselect {
+	background-color:#FFF !important;
+	color:inherit;
+	border-color:1px solid #e5e6e7;
+	text-align:left
+}
+.multiselect:hover{
+	color:inherit;
+}
+.btn .caret{
+	margin-top:8px;
+	float:right;
+}
+/*.input-group-addon{ display:none;}*/
+
+.multiselect .dropdown-toggle .btn .btn-default{
+	color:inherit;
+}
+.bootstrap-select .btn {
+    white-space: normal;
+}
+.button img {
             height: 40px;
             width: 40px;
             object-fit: contain;
             border-radius: 5px;
         }
-        .button:hover {
-            background: linear-gradient(90deg, #007bff, #1e90ff);
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9rem;
-        }
-    </style>
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3151333870409887"
-     crossorigin="anonymous"></script>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</head>
-<body>
-    <nav>
-        <h1>Wolf-Paw</h1>
-    </nav>
 
-    <div class="content">
-        <!-- Google AdSense Ad -->
-       
-        <ins class="adsbygoogle"
-            style="display:block; text-align:center;"
-            data-ad-client="ca-pub-XXXXXXXXXXXXXX"
-            data-ad-slot="XXXXXXX"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+.daterangepicker select.hourselect, .daterangepicker select.minuteselect, .daterangepicker select.secondselect, .daterangepicker select.ampmselect{ width:auto !important}
+.daterangepicker select.monthselect, .daterangepicker select.yearselect{ width: auto !important}
 
-        <div class="button-container">
-            <div class="button-box">
-                <button class="button" onclick="alert('Button 1 clicked!')">
-                    <img src="https://via.placeholder.com/40" alt="Logo 1">
-                    Button 1
-                </button>
-            </div>
-            <div class="button-box">
-                <button class="button" onclick="alert('Button 2 clicked!')">
-                    <img src="https://via.placeholder.com/40" alt="Logo 2">
-                    Button 2
-                </button>
-            </div>
-            <div class="button-box">
-                <button class="button" onclick="alert('Button 3 clicked!')">
-                    <img src="https://via.placeholder.com/40" alt="Logo 3">
-                    Button 3
-                </button>
-            </div>
-            <div class="button-box">
-                <button class="button" onclick="alert('Button 4 clicked!')">
-                    <img src="https://via.placeholder.com/40" alt="Logo 4">
-                    Button 4
-                </button>
-            </div>
-            <div class="button-box">
-                <button class="button" onclick="alert('Button 5 clicked!')">
-                    <img src="https://via.placeholder.com/40" alt="Logo 5">
-                    Button 5
-                </button>
-            </div>
-            <div class="button-box">
-                <button class="button" onclick="alert('Button 6 clicked!')">
-                    <img src="https://via.placeholder.com/40" alt="Logo 6">
-                    Button 6
-                </button>
-            </div>
+</style>
+
+
+</div>
+
+    
+            <style type="text/css">
+  .ulBtn li {
+    display: inline;
+    margin-right: auto;
+}
+  
+
+</style>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="ibox float-e-margins">
+        <div class="ibox-content" dir="rtl">
+          <h1 align="center" class="btn-success" >Wolf PAW (Security) </h1>
+          
+  
+</div>
+
+
+      
+            <tbody>
+              <tr>
+                <td><div class="row show-grid">
+                    <ul class="ulBtn">
+                      <li> 
+                        <a href="https://bill.pitc.com.pk/mepcobill"style=" text-decoration: none;color: inherit;">
+                        <button class="btn btn-success btn-xxl"  type="button" >
+                          <img src="https://bill.pitc.com.pk/images/companies/mepco/mepcoLogo.png" 
+                          style="height: 40px;width: 40px; object-fit: contain;border-radius: 5px;" >میپکو(MEPCO)                        
+                         </a></li>
+                         <li><a href="http://www.lesco.gov.pk:36269/Modules/CustomerBillN/CheckBill.asp"style=" text-decoration: none;color: inherit;">
+                          <button class="btn btn-success btn-xxl"  type="button" value="میپکو(MEPCO)">
+                            <img src="https://www.lesco.gov.pk/UIRewamp/new_version/Assets/icons/LESCOLogo80x80.png" 
+                            style="height: 40px;width: 40px; object-fit: contain;border-radius: 5px;" >لیسکو(LESCO)                        
+                           </a></li>
+                         <li><a href="https://bill.pitc.com.pk/fescobill"style=" text-decoration: none;color: inherit;">
+                          <button class="btn btn-success btn-xxl"  type="button" >
+                            <img src="https://bill.pitc.com.pk/images/companies/fesco/fescoLogo.png" 
+                            style="height: 40px;width: 40px; object-fit: contain;border-radius: 5px;" >فیسکو(FESCO)                        
+                           </a></li>
+                      <li> <a href="https://bill.pitc.com.pk/Gepcobill/"style=" text-decoration: none;color: inherit;">
+                        <button class="btn btn-success btn-xxl"  type="button" >
+                          <img src="https://bill.pitc.com.pk/images/companies/gepco/gepcoLogo.png" 
+                          style="height: 40px;width: 40px; object-fit: contain;border-radius: 5px;" >جیپکو(GEPCO)                        
+                         </a></li>
+                       <li> <a href="https://bill.pitc.com.pk/iescobill/"style=" text-decoration: none;color: inherit;">
+                        <button class="btn btn-success btn-xxl"  type="button" >
+                          <img src="https://bill.pitc.com.pk/images/companies/iesco/iescoLogo.png" 
+                          style="height: 40px;width: 40px; object-fit: contain;border-radius: 5px;" >اسلام آباد(IESCO)
+                         </a></li>
+                       <li> <a href="https://bill.pitc.com.pk/hescobill/"style=" text-decoration: none;color: inherit;">
+                        <button class="btn btn-success btn-xxl"  type="button" >
+                          <img src="https://bill.pitc.com.pk/images/companies/hesco/hescoLogo.png" 
+                          style="height: 40px;width: 40px; object-fit: contain;border-radius: 5px;" >ہیسکو(HESCO)                        
+                         </a></li>
+                        <li><a href="https://bill.pitc.com.pk/pescobill/"style=" text-decoration: none;color: inherit;">
+                          <button class="btn btn-success btn-xxl"  type="button" value="میپکو(MEPCO)">
+                            <img src="https://bill.pitc.com.pk/images/companies/pesco/pescoLogo.png" 
+                            style="height: 40px;width: 40px; object-fit: contain;border-radius: 5px;" >پسیکو(PESCO)                        
+                           </a></li>
+                          
+                         <li> <a href="https://bill.pitc.com.pk/qescobill/"style=" text-decoration: none;color: inherit;">
+                          <button class="btn btn-success btn-xxl"  type="button" value="میپکو(MEPCO)">
+                            <img src="https://bill.pitc.com.pk/images/companies/qesco/qescoLogo.png" 
+                            style="height: 40px;width: 40px; object-fit: contain;border-radius: 5px;" >قیسکو(QESCO)                        
+                           </a></li>
+                         <li> <a href="https://bill.pitc.com.pk/sepcobill/"style=" text-decoration: none;color: inherit;">
+                          <button class="btn btn-success btn-xxl"  type="button" value="میپکو(MEPCO)">
+                            <img src="https://bill.pitc.com.pk/images/companies/sepco/sepcoLogo.png" 
+                            style="height: 40px;width: 40px; object-fit: contain;border-radius: 5px;" >سپکو(SEPCO)                        
+                           </a></li> 
+                        <li> <a href="https://bill.pitc.com.pk/sepcobill/"style=" text-decoration: none;color: inherit;">
+                          <button class="btn btn-success btn-xxl"  type="button" value="میپکو(MEPCO)">
+                            <img src="https://bill.pitc.com.pk/images/companies/tesco/tescoLogo.png" 
+                            style="height: 40px;width: 40px; object-fit: contain;border-radius: 5px;" >ٹسکو(TESCO)                        
+                           </a></li> 
+                    </ul>
+                  </div></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
     </div>
+  </div>
+</div>
+ </div>
 
-    <footer>
-        <p dir="rtl">FRC فارم اوریجنل شناختی کارڈ، برتھ سرٹیفکیٹ اور موجودہ لوکیشن جیسی سروسز PAID ہیں جو کہ مارکیٹ میں سب سے سستے ریٹ پر یہاں مہیا کی جاتی ہیں ہم رابطہ کریں ! شکریہ </p>
-    </footer>
-</body>
-</html>
+        </div>
+      </div>
+  
+</body></html>
